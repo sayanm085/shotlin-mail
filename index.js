@@ -95,7 +95,9 @@ app.post('/api/send-email', async (req, res) => {
 
 databaseconnection()
 .then(() => {
-    app.listen();
+    app.listen(4000, () => {
+        console.log('Server is running on port 4000');
+    });
 })
 .catch((error) => {
     console.log("error in db connection" , error);
