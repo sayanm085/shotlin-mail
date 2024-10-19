@@ -53,4 +53,6 @@ app.post('/api/send-email', async (req, res) => {
 });
 
 
-app.listen();
+app.listen(4000, () => {
+    console.log('Server running on port 4000');
+});
