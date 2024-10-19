@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 const cors = require('cors');
 const emailTemplate = require('./emailTemplate.js');
 const databaseconnection = require('./db/mongodb.js');
-
+const port = 3000;
 const emailModel = require('./db/email.model.js');
 
 
